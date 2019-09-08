@@ -19,7 +19,10 @@ module.exports = function(environment) {
 		},
 
 		APP: {
-			API_URL: 'https://api.openweathermap.org/data/2.5/'
+			API_URL: 'https://api.openweathermap.org/data/2.5/',
+			// NOTE: This key should be inside an ENV var
+			// For the sake of simplicity, I add it here
+			API_KEY: '4db15709514dda63b328c75853f7dcb9'
 		}
 	};
 
