@@ -1,3 +1,4 @@
+import Ember from 'ember';
 import Application from '@ember/application';
 import Resolver from './resolver';
 import loadInitializers from 'ember-load-initializers';
@@ -10,5 +11,13 @@ const App = Application.extend({
 });
 
 loadInitializers(App, config.modulePrefix);
+
+Ember.onerror = function(error) {
+	if (Ember.testing) {
+		throw error;
+	}
+
+	// ...desired development and production behaviors here...
+};
 
 export default App;
