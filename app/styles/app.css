@@ -10,3 +10,7 @@ body > .ember-view {
 	@apply min-w-full;
 	@apply min-h-full;
 }
+
+body {
+	scroll-snap-type: y mandatory;
+}
