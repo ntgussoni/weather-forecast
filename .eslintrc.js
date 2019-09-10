@@ -45,19 +45,6 @@ module.exports = {
 				'comma-dangle': [2, 'only-multiline'],
 				semi: [2, 'always'],
 				'no-extra-semi': 2,
-				'jsx-quotes': [2, 'prefer-double'],
-				'react/jsx-boolean-value': [2, 'always'],
-				'react/jsx-curly-spacing': [2, 'never'],
-				'react/jsx-max-props-per-line': [
-					2,
-					{
-						maximum: 3
-					}
-				],
-				'react/jsx-no-literals': 2,
-				'react/self-closing-comp': 2,
-				'react/sort-comp': 2,
-				'react/prop-types': 0,
 				'space-before-function-paren': 'off',
 				quotes: [2, 'single', 'avoid-escape']
 			})
