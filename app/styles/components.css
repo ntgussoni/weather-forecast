@@ -1,0 +1,11 @@
+.triangle {
+	transform-origin: center center;
+	position: absolute;
+	top: 0;
+	left: -14px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 2px 17.3px 2px;
+	border-color: transparent transparent #007bff transparent;
+}

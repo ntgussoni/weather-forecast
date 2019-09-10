@@ -7,5 +7,8 @@
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "none",
-  "useTabs": true
+  "useTabs": true,
+  "html.format.enable": true,
+  "html.format.indentHandlebars": true,
+  "html.format.maxPreserveNewLines": 0
 }
