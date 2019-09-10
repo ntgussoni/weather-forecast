@@ -1,11 +1,11 @@
-<div data-test-card class="card {{if actionable "actionable"}} container text-white mx-auto">
+<div data-test-card class="card {{if actionable "actionable" "w-screen"}} container text-white mx-auto  h-screen md:h-auto mt-5 md:mt-0 ">
   <div class="mt-2 p-4 border-b border-grey-light text-center">
     <span data-test-city-name class="text-4xl font-thin text-white">{{city.name}}</span>
   </div>
   <div class="flex justify-center p-4">
     <img data-test-image src={{city.icon}} alt="weather icon" title={{city.weatherDescription}}>
   </div>
-  <div class="flex justify-center">
+  <div class="flex justify-center mb-10">
     <div class="text-center p-2">
       <div class="text-lg text-grey-light">
         <span data-test-temp class="text-center text-5xl text-white mx-6  font-thin">{{city.avgTemp}}°</span>
