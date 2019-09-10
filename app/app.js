@@ -16,8 +16,6 @@ Ember.onerror = function(error) {
 	if (Ember.testing) {
 		throw error;
 	}
-
-	// ...desired development and production behaviors here...
 };
 
 export default App;

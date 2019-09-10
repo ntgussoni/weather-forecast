@@ -1,0 +1,17 @@
+<div class="card {{if actionable "actionable"}} container text-white mx-auto">
+  <div class="mt-2 p-4 border-b border-grey-light text-center">
+    <span class="text-4xl font-thin text-white">{{city.name}}</span>
+  </div>
+  <div class="flex justify-center p-4">
+    <img src={{city.icon}} alt="weather icon" title={{city.weatherDescription}}>
+  </div>
+  <div class="flex justify-center">
+    <div class="text-center p-2">
+      <div class="text-lg text-grey-light">
+        <span class="text-center text-5xl text-white mx-6  font-thin">{{city.avgTemp}}°</span>
+        <span class="text-left text-white relative"><Wind-Arrow @degrees={{city.windDegrees}}/>{{city.windSpeed}}m/s</span>
+      </div>
+    </div>
+  </div>
+  {{yield}}
+</div>

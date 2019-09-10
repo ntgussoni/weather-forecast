@@ -6,5 +6,6 @@ export default Model.extend({
 	avgTemp: attr('number'),
 	windSpeed: attr('number'),
 	windDegrees: attr('number'),
-	icon: attr('string')
+	icon: attr('string'),
+	weatherDescription: attr('string')
 });

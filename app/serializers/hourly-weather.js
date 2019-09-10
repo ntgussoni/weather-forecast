@@ -8,6 +8,8 @@ export default ApplicationSerializer.extend({
 		hash.windSpeed = hash.wind.speed;
 		hash.windDegrees = hash.wind.deg;
 		hash.icon = `http://openweathermap.org/img/wn/${hash.weather[0].icon}@2x.png`;
+		hash.weatherDescription = hash.weather[0].main;
+
 		return this._super(...arguments);
 	}
 });
