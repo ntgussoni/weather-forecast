@@ -1,0 +1,12 @@
+<div class="flex w-16 flex-col text-sm">
+  <img data-test-image src={{hour.icon}} alt="hour icon" title={{hour.weatherDescription}} class="mb-1">
+  <div data-test-temp class="text text-center text-lg text-gray-100">
+    {{hour.avgTemp}}°
+  </div>
+  <div data-test-hour class="text-center text-sm text-gray-100 font-thin">
+    {{moment-format hour.date "hh a"}}
+  </div>
+  <div data-test-day class="text-center text-sm text-gray-100 font-thin -mt-1">
+    {{moment-format hour.date "D MMM"}}
+  </div>
+</div>
