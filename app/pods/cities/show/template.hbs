@@ -1,0 +1,29 @@
+<div class="min-h-full min-h-screen {{if isDay "bg-blue-500" "bg-gray-900"}} flex justify-start items-start sm:items-center sm:justify-center">
+  {{#link-to "cities"}}
+    {{back-button}}
+  {{/link-to}}
+  <div class="w-full flex flex-wrap">
+    <div class="w-full">
+      <div class="sm:ml-0 md:ml-8 first:ml-0 flex justify-start sm:justify-center">
+        <Card @city={{city}}>
+          <div class="flex flex-row flex-wrap sm:flex-no-wrap  justify-start sm:justify-center">
+            {{#each filteredHourlyWeathers as |hour|}}
+              <div class="flex w-16 flex-col text-sm">
+                <img src={{hour.icon}} alt="hour icon" title={{hour.weatherDescription}} class="mb-1">
+                <div class="text text-center text-lg text-gray-100">
+                  {{hour.avgTemp}}°
+                </div>
+                <div class="text-center text-sm text-gray-100 font-thin">
+                  {{moment-format hour.date "hh a"}}
+                </div>
+                <div class="text-center text-sm text-gray-100 font-thin -mt-1">
+                  {{moment-format hour.date "D MMM"}}
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </Card>
+      </div>
+    </div>
+  </div>
+</div>

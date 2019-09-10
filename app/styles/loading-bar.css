@@ -1,0 +1,47 @@
+.loading-bar {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 4px;
+}
+
+.loading-bar :nth-child(1) {
+	position: absolute;
+	height: 4px;
+	background-color: #fff;
+	animation: loading 3s linear infinite;
+}
+
+.loading-bar :nth-child(2) {
+	position: absolute;
+	height: 4px;
+	background-color: blue;
+	opacity: 0.4;
+	animation: loading 3s linear 1s infinite;
+}
+
+.loading-bar :nth-child(3) {
+	position: absolute;
+	height: 4px;
+	background-color: #fff;
+	opacity: 0.6;
+	animation: loading 3s linear 2s infinite;
+}
+
+@keyframes loading {
+	from {
+		left: 50%;
+		width: 0;
+		z-index: 100;
+	}
+	33.3333% {
+		left: 0;
+		width: 100%;
+		z-index: 10;
+	}
+	to {
+		left: 0;
+		width: 100%;
+	}
+}

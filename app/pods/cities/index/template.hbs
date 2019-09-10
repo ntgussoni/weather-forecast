@@ -1,0 +1,14 @@
+
+<div class="min-h-full min-h-screen bg-indigo-600 flex justify-start items-start sm:items-center sm:justify-center">
+  <div class="w-full flex flex-wrap ">
+    {{#each model as |city|}}
+      <div class="w-full lg:w-1/5">
+        <div class="sm:ml-0 md:ml-8 first:ml-0 flex justify-center">
+          {{#link-to "cities.show" city.id}}
+            <Card @city={{city}} @actionable={{true}}/>
+          {{/link-to}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
